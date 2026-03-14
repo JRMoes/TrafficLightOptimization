@@ -267,7 +267,7 @@ This project was developed as part of an **Operations Research case study**.
   <img src="https://github.com/JRMoes.png" width="60px" alt="Jesse Moestaredjo"/>
 </a>
 <a href="https://github.com/PSchep13">
-  <img src="https://github.com/PSchep13" width="60px" alt="Teammate 2"/>
+  <img src="https://github.com/PSchep13.png" width="60px" alt="Teammate 2"/>
 </a>
 <a href="https://github.com/avandersluys">
   <img src="https://github.com/avandersluys.png" width="60px" alt="Teammate 1"/>
