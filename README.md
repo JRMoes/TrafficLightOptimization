@@ -125,7 +125,6 @@ This allows efficient optimization despite the simulation being **stochastic and
 ```
 .
 ├── SPSA TLO.py
-├── OR_Case_Group_5_Traffic.pdf
 └── README.md
 ```
 
