@@ -124,8 +124,9 @@ This allows efficient optimization despite the simulation being **stochastic and
 
 ```
 .
-├── SPSA TLO.py
-└── README.md
+├── README.md
+├── SPSA Optimisation Path.png
+└── SPSA TLO_V4.py
 ```
 
 ### `SPSA TLO.py`
@@ -136,6 +137,10 @@ Main program containing:
 * SOTL controller implementation
 * SPSA optimization
 * Visualization and animation tools
+
+### `SPSA Optimisation Path.py`
+
+Plot showing the optimisation of the switching thresholds for 10000 iterations.
 
 ---
 
