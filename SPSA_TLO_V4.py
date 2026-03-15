@@ -1249,8 +1249,7 @@ def spsa_optimize_projection(
     Baseline SPSA variant kept for reference.
 
     Note: this is the older projection-based version from the original file.
-    The code comment in the original indicates that its feasibility handling is
-    not the preferred one.
+    Its projection is asymetric and therefore feasibility handling is not the preferred one.
     """
     theta = np.array(theta0, dtype=float)
     d = theta.size
@@ -1494,12 +1493,12 @@ def run_from_config(cfg):
 if __name__ == "__main__":
     CONFIG = {
         # One of: "batch", "animate", "spsa"
-        "MODE": "spsa",
+        "MODE": "batch",
 
         # Shared simulation settings
         "SEED": 1,
-        "HORIZON": 360.0,
-        "WARMUP": 0.0,
+        "HORIZON": 3600.0,
+        "WARMUP": 1200.0,
         "PHI_MIN": 5,
         "ALL_RED_DURATION": 5.0,
 
@@ -1513,11 +1512,11 @@ if __name__ == "__main__":
         "FILENAME": "traffic_debug.mp4",
 
         # SPSA settings
-        "SPSA_THETA0": [60.0, 60.0, 60.0, 60.0],
+        "SPSA_THETA0": [60.0, 60.0, 60.0, 60.0], # Initial guess for (Ba1, Ba2, Be1, Be2)
         "SPSA_EPSILON": 5.0,
         "SPSA_ETA": 30.0,
-        "SPSA_N_ITER": 200,
-        "SPSA_BATCH": 5,
+        "SPSA_N_ITER": 200, 
+        "SPSA_BATCH": 1, 
         "SPSA_LO": 0.0,
         "SPSA_HI": 200.0,
         "SPSA_PLOT": True,
